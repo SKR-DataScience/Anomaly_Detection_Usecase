@@ -19,7 +19,7 @@
         <tr>
             <td rowspan=2>1. 개요</td>
             <td>개요1. 이상탐지의 정의와 발생원인</td>
-            <td><a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note1.md">강의 - 개요2. 이상탐지의 종류</a></td>
+            <td><a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note1.md">강의 - 개요1. 이상탐지의 정의와 발생원인</a></td>
         </tr>
         <tr>
             <td>개요2. 이상탐지의 종류</td>
