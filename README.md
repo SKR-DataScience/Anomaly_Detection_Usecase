@@ -5,23 +5,53 @@
 김유리, 김재원, 최동민
 
 ## 목차
-### 방법론
-1. 개요
-2. 거리기반
-	- 3 sigma, box plot
-	- 마할라노비스 거리
-	- KNN
-	- LOF
-3. 분포 & 패턴 기반
-	- Isolation Forest
-	- One class SVM
-	- AutoEncoder
-4. 시각화기반
-	- 축소차원(PCA) 시각화(t-SNE)
-6. Sequence 기반
-	- 시계열 분해 이상탐지 
-		- STL
-		- Holt-Winters
+### 
+
+<table>
+    <thead>
+        <tr>
+            <th>구분</th>
+            <th>목차</th>
+            <th>강의/실습</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2>1. 개요</td>
+            <td>개요1. 이상탐지의 정의와 발생원인</td>
+            <td><a href="https://github.com/YuriXStuart/MLOPS_Andrew_Ng/blob/main/lesson2/note.md">강의 - 개요2. 이상탐지의 종류</a></td>
+        </tr>
+        <tr>
+            <td>개요2. 이상탐지의 종류</td>
+			<td> <a href="https://github.com/YuriXStuart/MLOPS_Andrew_Ng/blob/main/lesson2/note.md">강의 - 개요2. 이상탐지의 종류</a></td>
+        </tr>
+		<tr>
+			<td rowspan=4> 2. 방법론 </td>
+			<td> 2.1. 거리기반 </td>
+			<td> a. 3 sigma, box plot </br> 
+				b. 마할라노비스 거리 </br>
+				c. KNN </br> 
+				d. LOF</td>
+		</tr>
+		<tr>
+			<td> 2.2. 분포 & 패턴 기반 </td>
+			<td> a. Isolation Forest </br> 
+				 b. One class SVM </br> 
+				 c. AutoEncoder</td>
+		</tr>
+		<tr>
+			<td> 2.3. 시각화 기반 </td>
+			<td> a. 축소차원(PCA) 시각화(t-SNE)Isolation Forest 
+		</tr>
+		<tr>
+			<td> 2.4. Sequence 기반  </td>
+			<td> a. 시계열 분해 이상탐지  </br> 
+					&nbsp;&nbsp;&nbsp;&nbsp; - STL </br> 
+					&nbsp;&nbsp;&nbsp;&nbsp; - Holt-Winters
+		</tr>
+    </tbody>
+</table>
+
 ### 분야
 1. 커머스 및 유저 행동
 	- 이상매출
