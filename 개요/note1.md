@@ -2,7 +2,7 @@
 
 ## 이상의 정의
 - 이상치(outlier) vs 이상(abnormal)
-    <center><img src="./fig1_1.png" width="1000%"></center>
+    <center><img src="./fig1_1.png" width="60%"></center>
     그림1. 이상값과 이상치의 차이
 
     ||이상치|이상|
