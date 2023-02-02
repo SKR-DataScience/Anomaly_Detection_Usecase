@@ -29,11 +29,13 @@
 
 ## 4. Outlier Detection
 - 데이터 Type / 데이터 Label / Train Data
-| 학습유형 | 패턴유형| 데이터유형 | 데이터종류 |
-|:---|:---|:---|:---|:---|
-| Supervised | Outlier Detection | Univariate Data | Time-series Data |
-| Semi-supervised | Novelty Detection | Multivariate Data | Non-time-series Data|
-| Unsupervised ||||
+ 
+  |학습유형|패턴유형|데이터유형|데이터종류|
+  |:---|:---|:---|:---|
+  | Supervised | Outlier Detection | Univariate Data | Time-series Data |
+  | Semi-supervised | Novelty Detection | Multivariate Data | Non-time-series Data|
+  | Unsupervised ||||
+
 - 위 판을 보고 해당하는 칸을 색칠해가며 내가 풀어야하는 문제 정의 가능
 
 ## 5. 평가 방법 산정
