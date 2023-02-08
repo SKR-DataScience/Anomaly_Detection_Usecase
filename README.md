@@ -41,11 +41,21 @@
 		</tr>
 		<tr>
 			<td rowspan=4> 2. 방법론 </td>
-			<td> 2.1. 거리기반 </td>
-			<td> a. 3 sigma, box plot </br> 
-				b. 마할라노비스 거리 </br>
+			<td rowspan=3> 2.1. 거리기반 </td>
+			<td> a. 3 sigma, box plot </td>
+			<td> - </td>
+		</tr>	
+		<tr>
+			<td>
+				<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/1_거리기반/note2_mh_dist.md">b. 마할라노비스 거리 </a></br>
 				c. KNN </br> 
-				d. LOF</td>
+			</td>
+			<td> 김유리 </td>
+		<tr>
+			<td>
+				d. LOF
+			</td>
+			<td> -</td>
 		</tr>
 		<tr>
 			<td> 2.2. 분포 & 패턴 기반 </td>

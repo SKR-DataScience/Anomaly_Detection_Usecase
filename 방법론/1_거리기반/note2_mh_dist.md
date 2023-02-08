@@ -34,35 +34,25 @@
 - ex. 2차전지 
 
 > ## 예제 코드
+
+- [sklearn.covariance.EllipticEnvelope 공식문서](https://scikit-learn.org/stable/modules/generated/sklearn.covariance.EllipticEnvelope.html)
+    - 정규분포 데이터에 대한 outlier 검출 모듈
+    - contamination: 데이터 내 이상치 비율 (0, 0.5]
+
+
+
 ```
 import pandas as pd
-import numpy as np
 
-# ▶ 정규 분포를 이용하여 데이터 분포에 타원을 그림, 타원에서 벗어날수록 outlier
+# 타원(정규분포)에서 벗어날수록 outlier
 from sklearn.covariance import EllipticEnvelope
-# ▶ 랜덤 데이터를 생성하는데 사용됩니다. (※ 모든 방향으로 같은 성질을 가지는 정규분포를 이용해 가상 데이터 생성 클러스링 용 가상데이터를 생성하는데 사용)
-from sklearn.datasets import make_blobs
 
-# ▶ 랜덤 데이터 생성
-X, _ = make_blobs(n_samples = 100,
-                  n_features = 2,
-                  centers = 1,
-                  random_state = 1)
-
-# ▶ 이상치 Input
-X[0,0] = 10
-X[0,1] = -10
-
-# ▶ EllipticEnvelope 을 이용하여 outlier를 검출하기 위한 객체를 생성합니다.
-# ▶ The amount of contamination of the data set, i.e. the proportion of outliers in the data set
+# 이상 탐지 객체
 outlier_detector = EllipticEnvelope(contamination=.5)
 
-# ▶ EllipticEnvelope 객체를 생성한 데이터 학습
+# 가우시안 분포를 적합할 데이터 X
 outlier_detector.fit(X)
 
-# ▶ outlier를 검출
-# ▶ +1 이면 boundary 안에 들어온 값으로 정상 데이터
-# ▶ -1 이면 outlier로 간주.
-pred = outlier_detector.predict(X)
-pred
+# 1이면 정상, -1이면 이상
+outlier_detector.predict(X)
 ```
