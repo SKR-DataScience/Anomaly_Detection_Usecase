@@ -18,7 +18,7 @@
     </thead>
     <tbody>
         <tr>
-            <td rowspan=3>1. 개요</td>
+            <td rowspan=4>1. 개요</td>
             <td>개요1. 정의와 종류 </td>
             <td><a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note1.md">1. 이상탐지의 정의와 발생원인</a> <br/>
 			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note2.md">2. 이상탐지의 종류</a></td>
@@ -37,7 +37,9 @@
 			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note7_JW.md">7. 이상탐지 문제해결 프로세스</a>
 			</td>
 			<td>김재원</td>
-		</tr>
+	</tr>
+	    	<tr>
+	    <td rowspan=1>개요3. 실무 적용 </td>
 		</tr>
 		<tr>
 			<td rowspan=4> 2. 방법론 </td>
