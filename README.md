@@ -40,6 +40,9 @@
 	</tr>
 	    	<tr>
 	    <td rowspan=1>개요3. 실무 적용 </td>
+	    		<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/%EA%B0%9C%EC%9A%94/note11_DM.md">11. 이상탐지 결과물 현업 전달하기</a><br/>
+			</td>
+			<td>최동민</td>
 		</tr>
 		<tr>
 			<td rowspan=4> 2. 방법론 </td>
