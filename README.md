@@ -47,8 +47,9 @@
 		<tr>
 			<td rowspan=4> 2. 방법론 </td>
 			<td rowspan=3> 2.1. 거리기반 </td>
-			<td> a. 3 sigma, box plot </td>
-			<td> - </td>
+			<td>
+			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/%EB%B0%A9%EB%B2%95%EB%A1%A0/1_%EA%B1%B0%EB%A6%AC%EA%B8%B0%EB%B0%98/note1_3sigma_and_boxplot.md">a. 3 sigma, box plot</a></td>
+			<td> 최동민 </td>
 		</tr>	
 		<tr>
 			<td>
