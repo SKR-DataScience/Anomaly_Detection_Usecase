@@ -3,13 +3,13 @@
 > ## 정의
 1. 수식적 의미
     ([참조. 위키피디아](https://en.wikipedia.org/wiki/Mahalanobis_distance))
-    <center><img src= "./fig2_1.jpg" width="100%"></center>
+    <center><img src= "./fig2_1.jpg" width="100%"></center><br/>
     <center>그림1. 마할라노비스 거리의 수식 정의</center>
 
     - $N$차원 벡터의 데이터로 이루어진 분포 $Q$가 있을 때 각 차원서의 평균 값들의 모음인 평균 벡터를 $\mu$라 하자. 이 때 분포 $Q$로부터 특정점 $x$의 마할라노비스 거리는 위 수식 $d_M(x,Q)$와 같다.
     - 마할라노비스 거리(MD)의 정의를 보면 평균 값($\mu$)을 빼고 공분산($S$)으로 나눈다. 즉, 원점조정과 스케일 조정 변환(정규화) 후 대부분의 데이터($Q$)와 새로운 점 $x$ 간 거리 차이를 계산한다. 해석하자면, 대부분의 데이터가 밀집된 중심점으로부터 얼마나 희소한 공간에 새로운 데이터가 위치한 지를 측정하는 것이다.
 2. 해석적 의미
-    <center><img src= "./fig2_2.jpg" width="60%"></center>
+    <center><img src= "./fig2_2.jpg" width="60%"></center><br/>
     <center>그림2. 유클리디안 거리 vs 마할라노비스 거리</center>
 
     - 중심점까지의 거리를 기준으로 이상치 식별
@@ -38,6 +38,7 @@
 - [sklearn.covariance.EllipticEnvelope 공식문서](https://scikit-learn.org/stable/modules/generated/sklearn.covariance.EllipticEnvelope.html)
     - 정규분포 데이터에 대한 outlier 검출 모듈
     - contamination: 데이터 내 이상치 비율 (0, 0.5]
+        - 파라미터 값 줄이면 이상치로 판단하는 데이터 수  감소
 
 
 

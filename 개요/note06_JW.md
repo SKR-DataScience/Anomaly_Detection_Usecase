@@ -5,7 +5,7 @@
 
 ## 1. 게임 머니(Game Money) 이상 탐지
 
-- 출처: <https://tack98tistory.com/42?category=454780>
+- [출처 링크](https://tack98tistory.com/42?category=454780)
 
 - 문제 정의
   - 게임 내 재화가 계속 늘어나면 인플레이션 현상 발생 -> 화폐 가치 하락, 신규 유저와 기본 유저간 빈부격차 발생 -> 신규 유저 이탈 

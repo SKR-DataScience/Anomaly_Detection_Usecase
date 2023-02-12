@@ -30,9 +30,9 @@
 <table>
     <thead>
         <tr>
-            <th>구분</th>
-            <th>종류</th>
-            <th>특징</th>
+            <th><center>구분</center></th>
+            <th><center>종류</center></th>
+            <th><center>특징</center></th>
         </tr>
     </thead>
     <tbody>

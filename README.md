@@ -19,63 +19,69 @@
     <tbody>
         <tr>
             <td rowspan=4>1. 개요</td>
-            <td>개요1. 정의와 종류 </td>
-            <td><a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note1.md">1. 이상탐지의 정의와 발생원인</a> <br/>
-			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note2.md">2. 이상탐지의 종류</a></td>
+            <td>1.1. 정의와 종류 </td>
+            <td><a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note01.md">1. 이상탐지의 정의와 발생원인</a> <br/>
+			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note02.md">2. 이상탐지의 종류</a></td>
 			<td>김유리</td>
         </tr>
 		<tr>
-            <td rowspan=2>개요2. Use Case</td>
-			<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note3_DM.md">3. 이상탐지 대표 Use Case</a><br/>
-			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note4_DM.md">4. 실제 현업 적용 사례 - 제조</a><br/>
-			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note5_DM.md">5. 실제 현업 적용 사례 - 금융</a><br/>
+            <td rowspan=2>2.2. Use Case</td>
+			<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note03_DM.md">3. 이상탐지 대표 Use Case</a><br/>
+			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note04_DM.md">4. 실제 현업 적용 사례 - 제조</a><br/>
+			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note05_DM.md">5. 실제 현업 적용 사례 - 금융</a><br/>
 			</td>
 			<td>최동민</td>
         <tr>
 			<td>
-			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note6_JW.md">6. 실제 현업 적용 사례 - 게임</a><br/>
-			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note7_JW.md">7. 이상탐지 문제해결 프로세스</a>
+			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note06_JW.md">6. 실제 현업 적용 사례 - 게임</a><br/>
+			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note07_JW.md">7. 이상탐지 문제해결 프로세스</a>
 			</td>
 			<td>김재원</td>
 	</tr>
 	    	<tr>
-	    <td rowspan=1>개요3. 실무 적용 </td>
+	    <td rowspan=1>1.3. 실무 적용 </td>
 	    		<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/%EA%B0%9C%EC%9A%94/note11_DM.md">11. 이상탐지 결과물 현업 전달하기</a><br/>
 			</td>
 			<td>최동민</td>
 		</tr>
 		<tr>
-			<td rowspan=4> 2. 방법론 </td>
+			<td rowspan=11> 2. 방법론 </td>
 			<td rowspan=3> 2.1. 거리기반 </td>
 			<td>
-			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/%EB%B0%A9%EB%B2%95%EB%A1%A0/1_%EA%B1%B0%EB%A6%AC%EA%B8%B0%EB%B0%98/note1_3sigma_and_boxplot.md">a. 3 sigma, box plot</a></td>
+			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/%EB%B0%A9%EB%B2%95%EB%A1%A0/1_%EA%B1%B0%EB%A6%AC%EA%B8%B0%EB%B0%98/note1_3sigma_and_boxplot.md">1. 3 sigma, box plot</a></td>
 			<td> 최동민 </td>
 		</tr>	
 		<tr>
 			<td>
-				<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/1_거리기반/note2_mh_dist.md">b. 마할라노비스 거리 </a></br>
-				c. KNN </br> 
+				<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/1_거리기반/note2_mh_dist.md">2. 마할라노비스 거리 </a></br>
+				<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/1_거리기반/note3_KNN.md">3. KNN </a></br> 
 			</td>
 			<td> 김유리 </td>
 		<tr>
 			<td>
-				d. LOF
+				4. LOF
 			</td>
-			<td> -</td>
+			<td> 최동민 </td>
 		</tr>
 		<tr>
-			<td> 2.2. 분포 & 패턴 기반 </td>
-			<td> a. Isolation Forest </br> 
-				 b. One class SVM </br> 
-				 c. AutoEncoder</td>
+			<td rowspan =3> 2.2. 분포 & 패턴 기반 </td>
+			<td> 1. Isolation Forest </td>
+			<td> 김재원 </td>
+		</tr>
+		<tr>
+			<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/2_분포_패턴기반/note2_one_class_svm.md">2. One class SVM </a> </td>
+			<td> 김유리 </td> 
+		</tr>
+		<tr>
+				 3. AutoEncoder</td>
 		</tr>
 		<tr>
 			<td> 2.3. 시각화 기반 </td>
-			<td> a. 축소차원(PCA) 시각화(t-SNE)Isolation Forest 
+			<td> 1. 축소차원(PCA) 시각화(t-SNE)Isolation Forest 
 		</tr>
 		<tr>
 			<td> 2.4. Sequence 기반  </td>
-			<td> a. 시계열 분해 이상탐지  </br> 
+			<td> 1. 시계열 분해 이상탐지  </br> 
 					&nbsp;&nbsp;&nbsp;&nbsp; - STL </br> 
 					&nbsp;&nbsp;&nbsp;&nbsp; - Holt-Winters
 		</tr>

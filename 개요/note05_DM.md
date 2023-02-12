@@ -5,7 +5,7 @@
 
 ## 1. 사용자 패턴 분석을 통한 금융 사기 탐지 (카카오뱅크)
 
-- 출처: <https://www.hankyung.com/economy/article/202208091621i>
+- [출처: "비번 누르는 속도·리듬까지…스마트폰 습관으로 금융사기 잡는다"](https://www.hankyung.com/economy/article/202208091621i)
 
 - 문제 정의
   - 비대면 금융 서비스의 발달로 편의성이 증가한 반면 사기에도 취약해짐
@@ -31,7 +31,7 @@
  
  ## 2. FDS, 은행 카드사 사기거래 탐지 (BC카드)
  
-- 출처: <https://www.kbanker.co.kr/news/articleView.html?idxno=205035>
+- [출처: FDS, 신용카드 부정사용 방지의 '첨병'](https://www.kbanker.co.kr/news/articleView.html?idxno=205035)
 
 - 문제 정의
   - 다양한 사기 방법으로 발생하는 금융 사기, 소비자 피해 증가
