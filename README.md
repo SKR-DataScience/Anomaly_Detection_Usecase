@@ -34,9 +34,9 @@
         <tr>
 			<td>
 			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note06_JW.md">6. 실제 현업 적용 사례 - 게임</a><br/>
-			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note07_JW.md">7. 이상탐지 문제해결 프로세스</a>
-			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note08_JW.md">8. 이상탐지 프로젝트 시작 시 점검해야 하는 내용 및 EDA</a>
-			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note09_JW.md">9. 이상탐지 프로젝트 셋업 및 일정 분배</a>
+			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note07_JW.md">7. 이상탐지 문제해결 프로세스</a><br/>
+			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note08_JW.md">8. 이상탐지 프로젝트 시작 시 점검해야 하는 내용 및 EDA</a><br/>
+			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note09_JW.md">9. 이상탐지 프로젝트 셋업 및 일정 분배</a><br/>
 			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/개요/note10_JW.md">10. 이상탐지 모델 비교를 위한 실험설계, 모델 선택법</a>
 			</td>
 			<td>김재원</td>
