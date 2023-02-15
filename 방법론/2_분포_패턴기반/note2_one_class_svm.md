@@ -37,10 +37,10 @@
 
 
 > ## 정의
- <center><img src= "./fig2_3.jpg" width="75%"></center> <br/>
+ <center><img src= "./fig2_6.jpg" width="75%"></center> <br/>
  <center>그림3. One Class SVM 개념도</center>
 
-- <span style="color:red"> 원점</span>으로부터 거리를 기준으로 초평면을 그어 분류(일반 SVM과의 차이)
+- <span style="color:red"> 원점</span>으로부터 거리를 기준으로 초평면을 그어 분류(일반 SVM과의 차이), 그림3에서는 c에 해당, margin 바깥에 있는 관측치를 이상치로 판단
 - SVM과 One Class SVM 비교
     ||SVM|OC SVM|
     |:---|:---|:---|
@@ -64,7 +64,23 @@
 - 온라인 서명 - 본인 여부 탐지
 
 > ## 코드
-
+- [sklearn.svm.OneClassSVM](https://scikit-learn.org/stable/modules/generated/sklearn.svm.OneClassSVM.html) 공식 문서
+    - kernel: ‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’ 
+    <br/>디폴트는 rbf, 커널은 클래스를 나누는 초평면의 형태, 커널의 종류에 따라 계산 복잡도가 달라짐
+         <center><img src= "./fig2_7.jpg" width="75%"></center>  
+    - gamma: ‘scale’, ‘auto’ 또는 숫자(non negative float) - [공식문서](https://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html)<br/>
+    감마는 개별 데이터 벡터의 영향도를 나타냄, 값이 작으면 먼 거리까지, 값이 크면 가까운 거리까지만 데이터를 참조한다.
+        <center><img src= "./fig2_8.jpg" width="75%"></center>  
+    - nu: 훈련셋 내 이상데이터의 비율, (0, 1] 사이의 값을 가짐, 디폴트는 0.5 
 ```
-추가예정
+from sklearn import svm
+
+# 분류기 객체 생성
+clf = svm.OneClassSVM(nu=0.1, kernel="rbf", gamma=0.1)
+
+# 모델 학습 - 비지도 학습이므로 X만 필요
+clf.fit(X_train)
+
+# 이상치 예측
+y_pred_outliers = clf.predict(X_outliers)
 ```
