@@ -72,7 +72,7 @@
 		</tr>
 		<tr>
 			<td rowspan =3> 2.2. 분포 & 패턴 기반 </td>
-			<td> 1. Isolation Forest </td>
+			<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/3_분류모델_기반/note1_Isolation_Forest.md">1. Isolation Forest </a> </td>
 			<td> 김재원 </td>
 		</tr>
 		<tr>
