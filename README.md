@@ -66,7 +66,7 @@
 			<td> 김유리 </td>
 		<tr>
 			<td>
-				4. LOF
+				<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/1_거리기반/note4_LOF.md">4. LOF </a></br
 			</td>
 			<td> 최동민 </td>
 		</tr>
