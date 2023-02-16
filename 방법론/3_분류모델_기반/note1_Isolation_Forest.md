@@ -68,7 +68,7 @@ clf.decision_function(X_outliers) # Score 볼 수 있음. 낮을수록 outlier(�
 clf.decision_function(X_test) # 높을수록 normal(양수), root로부터 거리가 멀다는 뜻
 
 # 정확도
-#정확도 1) 정상 데이터셋을 얼만큼 정상으로 예측했는지?
+# 정확도 1) 정상 데이터셋을 얼만큼 정상으로 예측했는지?
 
 print('테스트 데이터셋에서 정확도:', list(y_pred_test).count(1) / y_pred_test.shape[0] )
 
