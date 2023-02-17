@@ -68,7 +68,7 @@
 		</tr>
 			<td rowspan =3> 2.2. 분포 & 패턴 기반 </td>
 			<td>
-				<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/1_거리기반/note4_LOF.md">1. LOF </a></br
+				<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/2_분포_패턴기반/note1_LOF.md">1. LOF </a></br
 			</td>
 			<td> 최동민 </td>
 		<tr>
