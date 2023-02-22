@@ -4,7 +4,7 @@
 <p align="center">
   <img src="./fig2_1.jpg" align="center" width="42%">
   <img src="./fig2_2.jpg"align="center" width="54%">
-  <figcaption align="center">그림1. SVM 개념도</figcaption>
+  <figcaption align="center">그림1. OC-SVM 개념도와 SVM 개념도</figcaption>
 </p>
 
 
@@ -18,26 +18,28 @@
         <center>그림2. Hard Margin vs Soft Margin</center>
 - 알고리즘(출처. [하버드 수업자료](https://harvard-iacs.github.io/2018-CS109A/lectures/lecture-20/presentation/lecture20_svm.pdf))
     - 위에서 설명한 개념을 식으로 표현하면 다음과 같다. 초평면을 찾는 방법은 앞서 언급했듯이 클래스가 다른 데이터 간 거리를 최대화하는 선을 찾는 것이다.
-        <center><img src= "./fig2_5.jpg" width="45%"></center> <br/>
+        <center><img src= "./fig2_5.jpg" width="70%"></center> <br/>
         <center>그림3. Decision Boundary(초평면)과 support vector(경계선에 있는 데이터) 간 거리</center>
 
         - 여기서 거리란 [선분과 점 사이의 직선거리](https://ko.wikipedia.org/wiki/점과_직선_사이의_거리)인데 그림3에서 $\frac{-b}{|w|} = \frac{2}{|w|}$에 해당한다.
 
     - $x_n$의 레이블 값(정답지)은 $y_n=w^Tx+b=1$ 또는 $y_n=w^Tx+b=-1$이다.
     - 이를 종합해 식을 서술하면 아래와 같다.
-        <center><img src= "./fm2_1.jpg" width="70%"></center> <br/>
+        <center><img src= "./fm2_1.jpg" width="85%"></center> <br/>
 
-        - 초평면 거리 $\frac{2}{|w|}$를 최대화하되, 레이블 예측이 정답이어야 한다.
-        - 데이터 포인트가 실제로 +1 레이블($y_n=1$)을 갖는데 class를 나누는 경계선 바깥에 있으면 $w^Tx+b\geq1$다. <br/> $\rightarrow$ $y_n(w^Tx+b) \geq1$
-        - 데이터 포인트가 실제로 -1 레이블($y_n=1$)을 갖는데 class를 나누는 경계선 바깥에 있으면 $w^Tx+b\leq1$다. <br/> $\rightarrow$ $y_n(w^Tx+b) \geq 1$
-        - 최대화 문제는 "쌍대문제"라는 표현으로 최소화 문제로 치환될 수 있다. $max_{w,b} \frac{2}{|w|} \rightarrow min_{w,b}\frac{|w|}{2}  \rightarrow min_{w,b}\frac{1}{2}|w|^2 $
-        -  $y_n(w^Tx+b) \geq 1$ 라는 제한 조건이 존재할 때 해(미분을 통한 최소화의 해 찾기)를 구하려면 [라그랑주 승수](https://untitledtblog.tistory.com/96)라는 개념을 사용해야 한다.
-         <center><img src= "./fm2_2.jpg" width="60%"></center> 
+        - **SVM 작동원리를 한 줄로 요약하자면, 정상과 비정상 데이터를 구분짓는 선 간의 거리인 초평면 거리 $\frac{2}{|w|}$를 최대화하되, 데이터의 정상, 비정상 여부($y$)를 제대로 예측해야 한다.** (SVM이 정상, 비정상을 올바르게 맞춘다면 $w^TX_n+b=1$ 또는 $w^TX_n+b=-1$ 선 바깥에 데이터가 위치)
+            - 어떤 데이터($X_n, y_n$)가 정상($y_n=1$)이면서 SVM 알고리즘에 의해 제대로 분류되어 클래스 구분선인 $w^Tx+b=1$ 바깥에 있으면 $w^TX_n+b\geq1$다. 이 경우를 식으로 표현하면, <br/> $\rightarrow y_n(w^TX_n+b) \geq1$
+            - 어떤 데이터($X_n, y_n$)가 비정상($y_n=-1$)이면서 SVM 알고리즘에 의해 제대로 분류되어 클래스 구분선인 $w^Tx+b=-1$ 바깥에 있으면 $w^TX_n+b\leq-1$다. 이 경우를 식으로 표현하면, <br/> $\rightarrow y_n(w^TX_n+b) \geq1$
+            - 따라서 초평면이 클래스를 제대로 구분하면 $y_n(w^TX_n+b) \geq1$를 만족한다.
+        - 최대화 문제는 "쌍대문제"라는 표현으로 최소화 문제로 치환될 수 있다. 즉, 위에서 언급한 최대화문제는 쌍대원리에 의해 최소화 문제로 해결할 수 있다.<br/>$max_{w,b} \frac{2}{|w|} \leftrightarrow  min_{w,b}\frac{|w|}{2}  \leftrightarrow  min_{w,b}\frac{1}{2}|w|^2 $
+        -  $y_n(w^Tx+b) \geq 1$ 라는 제한 조건이 존재할 때 해(미분을 통한 최소화의 해 찾기)를 구하려면 [라그랑주 승수](https://untitledtblog.tistory.com/96)라는 개념을 사용해야 한다. 라그랑주 승수는 제약식이 존재하는 최적화 문제를 "최적화대상식-constant x 제약식" 꼴로 푼다. 아래 $L$은 최소화 대상인 식(초평면 간 거리의 변형식 $\frac{1}{2}|w|^2$)에서 제약식($y_n(w^TX_n+b) \geq1$)을 뺀 것이다. 즉, 아래 식은 SVM 알고리즘의 초평면을 구하는 문제를 라그랑주 승수로 표현한 것이다. <center><img src= "./fm2_2.jpg" width="75%"></center> <br/>
+            - 위 식을 풀어 $\hat{w}, \hat{b}$를 구하면 정상, 비정상 데이터를 극명하게 구분짓는 선 $\hat{w}^Tx+\hat{b}$를 구할 수 있다.
+            
             
 
 
 > ## 정의
- <center><img src= "./fig2_6.jpg" width="75%"></center> <br/>
+ <center><img src= "./fig2_6.jpg" width="65%"></center> <br/>
  <center>그림3. One Class SVM 개념도</center>
 
 - <span style="color:red"> 원점</span>으로부터 거리를 기준으로 초평면을 그어 분류(일반 SVM과의 차이), 그림3에서는 c에 해당, margin 바깥에 있는 관측치를 이상치로 판단
@@ -72,7 +74,7 @@
     감마는 개별 데이터 벡터의 영향도를 나타냄, 값이 작으면 먼 거리까지, 값이 크면 가까운 거리까지만 데이터를 참조한다.
         <center><img src= "./fig2_8.jpg" width="75%"></center>  
     - nu: 훈련셋 내 이상데이터의 비율, (0, 1] 사이의 값을 가짐, 디폴트는 0.5 
-```
+```python
 from sklearn import svm
 
 # 분류기 객체 생성

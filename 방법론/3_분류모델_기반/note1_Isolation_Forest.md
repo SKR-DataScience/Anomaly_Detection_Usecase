@@ -49,7 +49,7 @@
 <br>
 
 > ## 코드
-```
+```python
 from sklearn.ensemble import IsolationForest
 
 # 분류기 객체 생성

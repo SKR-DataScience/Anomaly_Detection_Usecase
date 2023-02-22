@@ -42,7 +42,7 @@
 
 
 
-```
+```python
 import pandas as pd
 
 # 타원(정규분포)에서 벗어날수록 outlier

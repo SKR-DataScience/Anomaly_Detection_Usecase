@@ -39,7 +39,7 @@
 - 표준화 필요: min-max normalization, z-score standardization
 - 새로운 데이터가 들어오면 모든 데이터와의 거리 측정
 
-```
+```python
 from pyod.utils.data import evaluate_print
 from pyod.models.knn import KNN
 

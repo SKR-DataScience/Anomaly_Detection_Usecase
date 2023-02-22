@@ -66,9 +66,9 @@
 			<td> 김유리 </td>
 		<tr>
 		</tr>
-			<td rowspan =3> 2.2. 분포 & 패턴 기반 </td>
+			<td rowspan =5> 2.2. 분포 & 패턴 기반 </td>
 			<td>
-				<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/2_분포_패턴기반/note1_LOF.md">1. LOF </a></br
+				<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/2_분포_패턴기반/note1_LOF.md">1. LOF </a>
 			</td>
 			<td> 최동민 </td>
 		<tr>
@@ -80,17 +80,30 @@
 			<td> 김유리 </td> 
 		</tr>
 		<tr>
-				 3. AutoEncoder</td>
+		<td> 4. 오토인코더 </a> </td>
+		<td> 김재원 </td> 
+		</tr>
+		<tr>
+		<td> 5. Robust Random Cut Forest</a> </td>
+		<td> 최동민 </td> 
 		</tr>
 		<tr>
 			<td> 2.3. 시각화 기반 </td>
-			<td> 1. 축소차원(PCA) 시각화(t-SNE)Isolation Forest 
+			<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/4_시각화기반/note1_PCA_tSNE.md">1. 축소차원(PCA) 시각화(t-SNE) </a> </td>
+			<td>김유리</td>
 		</tr>
 		<tr>
-			<td> 2.4. Sequence 기반  </td>
-			<td> 1. 시계열 분해 이상탐지  </br> 
-					&nbsp;&nbsp;&nbsp;&nbsp; - STL </br> 
-					&nbsp;&nbsp;&nbsp;&nbsp; - Holt-Winters
+			<td rowspan =4> 2.4. 시퀀스 기반  </td>
+			<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/5_시퀀스기반/note1_SH_ESD.md">1. S-H ESD </a> 
+			</td>
+		</tr>
+			<td>김유리</td>
+			<tr>
+			<td> 2. 시계열 분해 이상탐지  </br> 
+			&nbsp;&nbsp;&nbsp;&nbsp; - STL </br> 
+			&nbsp;&nbsp;&nbsp;&nbsp; - Holt-Winters
+			</td>
+			<td>최동민</td>
 		</tr>
     </tbody>
 </table>

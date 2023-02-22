@@ -104,7 +104,7 @@
 
 > ## 코드
 
-```
+```python
 from sklearn.neighbors import LocalOutlierFactor
 
 # 모델 생성 (하이퍼파라미터 설정)
