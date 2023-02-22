@@ -2,10 +2,10 @@
 이상탐지 유형 별 적용 가능 알고리즘과 산업군 별 이상탐지 사례를 살펴본다.
 
 ## 스터디원
-김유리, 김재원, 최동민
+- 김유리, 김재원, 최동민
 
-## 목차
-### 
+
+## 1. 개요와 방법론
 
 <table>
     <thead>
@@ -96,9 +96,8 @@
 			<td rowspan =4> 2.4. 시퀀스 기반  </td>
 			<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/5_시퀀스기반/note1_SH_ESD.md">1. S-H ESD </a> 
 			</td>
-		</tr>
 			<td>김유리</td>
-			<tr>
+		<tr>
 			<td> 2. 시계열 분해 이상탐지  </br> 
 			&nbsp;&nbsp;&nbsp;&nbsp; - STL </br> 
 			&nbsp;&nbsp;&nbsp;&nbsp; - Holt-Winters
@@ -108,7 +107,7 @@
     </tbody>
 </table>
 
-### 분야
+## 2. 분야 별 이상탐지
 1. 커머스 및 유저 행동
 	- 이상매출
 	- 이상 유저
