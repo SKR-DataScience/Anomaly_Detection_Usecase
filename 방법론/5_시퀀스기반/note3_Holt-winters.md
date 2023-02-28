@@ -1,28 +1,19 @@
-# 시퀀스 기반 이상탐지 - STL
+# 시퀀스 기반 이상탐지 - Holt-winters
 
 </br>
 </br>
 
 > ## 정의
-- 시계열 데이터 분해 후, Residual(잔차)를 이용하여 데이터 이상을 탐지하는 기법
-- 시계열 분해?
-  * 시계열 데이터를 여러 개의 구성요소로 분해하는 통계적 방법.   
-    시계열 데이터가 '체계적 성분'과 '불규칙적 성분'으로 구성된다고 가정 -> 이를 분리하여 시계열 데이터를 분석/예측하는 것이 목적.   
-  * 체계적 성분은 '추세 성분','계절 성분','순환 성분'이 있으며, 이러한 요소로 설명할 수 없는 오차(Noise)가 불규칙적 성분에 해당.
-    * 추세 성분(Trend): 데이터가 장기적으로 증가하거나 하락하는 흐름. 꼭 선형적이지 않아도 됨.   
-    * 계절 성분(Seasonality): 데이터에서 나타나는 명확하고 일정한 패턴. 정확히 일정한 빈도로 나타남. (매년 특정한 시기, 1주일, 특정 요일 등)    
-    * 순환 성분(Cycle): 고정된 주기나 빈도는 아니지만, 반복적으로 증가하거나 감소하는 패턴. (경제 상황으로 인한 경기 순환 등)
-  * 기존 다양한 시계열 분해 기법이 존재함 (Classical Decomposition, X11, SEATS 등)
+- Exponential smoothing(지수평활) 기법을 기반으로 Trend와 Seasonality 속성을 추가해 시계열 데이터를 예측하고,    
+  신뢰구간을 설정하여 이상 탐지하는 기법
+- Exponentail smoothing
+  * 시간적으로 가까운 데이터는 가중치를 높게, 오래된 데이터는 가중치를 낮게 설정하여 미래의 값을 예측하는 방법
+- 단순한 지수평활 기법에 trend와 seasonality 속성을 추가함
+- Holt-winters 모델을 통해 시계열 데이터를 예측하고, brutlag 알고리즘을 활용해 신뢰구간을 설정 -> 이를 넘으면 이상치로 간주
+- 단순한 구조이지만 여러 과제에서 baseline model로서 널리 활용되고 있음
 
-  * STL에서는 Trend와 Seasonality를 제거하고 남은 Residual을 이용해 이상치 탐지
-  
-    ![image](https://user-images.githubusercontent.com/55543156/221077277-5cd029a6-e8ed-453d-80cd-330e896770aa.png)
-
-- 특징
-  * 다양한 상황에서 사용할 수 있는 강력한 시계열 분해 기법
-  * 월별, 분기별 포함 어떤 종류의 계절성도 다를 수 있음 (SEATS, X11과의 차이)
-  * 계절적인 성분이 시간에 따라 변 해도, Hyper parameter를 통해 반영 가능
-
+![image](https://user-images.githubusercontent.com/55543156/221913393-accb1287-9907-4044-978b-370ff8b3fb91.png) </br>
+(파란색은 실제 데이터, 주황색은 예측값, 빨간색은 신뢰구간)
 
 </br>
 </br>
@@ -31,31 +22,25 @@
 
 |장점|단점|
 |:---|:---|
-|- 분기별, 월별, 일별 분해 모두 가능 </br> - Moving Avg 방식으로 분해하지 않아 데이터 유실 없음 </br> - 돌발 이상치에 대해 추세,주기 영향 받지 않음 |- 캘린더 데이터를 반영하지 못함. 일별 데이터로 변환 필요 </br> - 덧셈 분해 기능만 제공 |
-
-  cf) 덧셈 분해 / 곱셈 분해 : Trend 변화에 따른 데이터 변동폭을 고려한 전통적인 시계열 분해 기법
-
-  * 덧셈 분해(additive decomposition) : y = S + T + R 
-    * Trend가 변화함에도 데이터의 변동폭이 일정하면 덧셈 분해를 사용
-      (Trend와 Seasonal의 관계가 없다고 판단될 때)
-
-  * 곱셈 분해(multiplicative decomposition) : y = S * T * R
-    * Trend가 변화함에 따라 데이터의 변동폭도 변화하면 곱셈 분해를 사용
-      (Trend와 Seasonal 사이에 관계가 있다고 판단될 때)
-    
-    ![image](https://user-images.githubusercontent.com/55543156/221903590-cf1840b6-1bf2-4c39-b875-103e476e2bdb.png)
-   
-    * 왼쪽 데이터는 덧셈 분해가, 오른쪽 데이터는 곱셈 분해가 적절함  
+|- 장기간 예측 가능 </br> - 하이퍼파라미터 조정하여 이상 허용오차(신뢰구간) 유연하게 대응 </br> - 연산량이 적음. 큰 데이터셋에 대해 리소스 절약, 자동화 가능 </br> - 계절성을 고려한 이상탐지 가능. 곱셈분해 가능.(STL과 차이) |- 단변량 데이터에 대해서만 적용 가능, 상관관계 고려 불가 </br> - 계절성이 없는 데이터에 대해서는 성능 저조함 </br> - 변동이 적은 계절성 데이터에 대해서는 민감하게 탐지할 우려가 있음 |
 
 
 </br>
 </br>
 
 > ## 사용방법
-- Statsmodels 패키지에 내장
-  - from statsmodels.tsa.seasonal import STL
-- 주요 파라미터로 주기(Seasonal) 설정
-- Seasonal 및 Trend 제거 후 남은 Residual에 대해서, 정규성 검증 및 3-sigma rule 적용해 이상 탐지
+- statsmodels 라이브러리에 내장
+  - from statsmodels.tsa.holtwinters import ExponentialSmoothing
+1) Exponential Smoothing을 통해 전체 데이터셋 학습하고 예측
+2) Brutlag Algorithm 활용해 신뢰구간 설정
+3) 신뢰구간 기반으로 이상 Point 탐지
+
+</br>
+</br>
+
+> ## 현업사례
+- 시간에 종속된(추이나 계절성 존재) 데이터의 이상 탐지
+- 수요 예측 
 
 </br>
 </br>
@@ -63,30 +48,71 @@
 > ## 코드
 
 ```python
-from statsmodels.tsa.seasonal import STL
+from statsmodels.tsa.holtwinters import ExponentialSmoothing
 
-# Odd num : seasonal = 13(연도별) / seasonal = 5(분기별) / seasonal = 7(주별) <<홀수로 넣어야 함
-stl = STL(co2, seasonal=13)
-res = stl.fit()
+temp_df = co2
+train_df = co2
 
-res.trend # 추세 확인
-res.seasonal # 계절성 확인
-res.resid # 잔차 확인
+""" (1) ExponentialSmoothing 모델을 만들어 학습, 전체 데이터에 대해 예측 """
+# additive는 경향성이 일정함을 의미하고, 경향성 변동폭이 있을 때는 multiplicative를 사용
+model = ExponentialSmoothing(
+    train_df, trend='additive', seasonal='additive').fit()
+    
+prediction = model.predict(
+    start=temp_df.index[0], end=temp_df.index[-1])
 
-# Ztest를 통한 정규성 검증(Nomality Test)
-# Ztest : 정규분포를 가정하며, 추출된 표본이 동일 모집단(정규분포)에 속하는지 가설 검증하기 위해 사용 (※ p-value가 0.05 이상이면 정규성을 따름)
-from statsmodels.stats.weightstats import ztest
-r = res.resid.values
-st, p = ztest(r)
-print(st,p)  
+""" (2) Brutlag Algorithm 으로 신뢰구간 설정 """
+PERIOD = 12        # The given time series has seasonal_period=12 
+GAMMA = 0.4        # the seasonility component (신뢰구간 설정시 가까이 있는 데이터에 가중치 주는 scaler 역할)
+SF = 1.96          # brutlag scaling factor for the confidence bands. (95% 구간)
+UB = []            # upper bound or upper confidence band (신뢰구간 상한)
+LB = []            # lower bound or lower confidence band (신뢰구간 하한)
 
-# ▶ 평균과 표준편차 출력
-mu, std = res.resid.mean(), res.resid.std()
-print("평균:", mu, "표준편차:", std)
+# 실측치와 예측치를 비교하는 자료구조
+difference_array = []
+dt = []
+difference_table = {"actual": temp_df, "predicted": prediction, "difference": difference_array, "UB": UB, "LB": LB}
 
-# 3-sigma(표준편차)를 기준으로 이상치 판단
-print("이상치 갯수:", len(res.resid[(res.resid>mu+3*std)|(res.resid<mu-3*std)]))
+# brutlag 알고리즘
+# 12개월 이전의 실측/예측 차이에 0.4, 이번달 차이에 0.6 정도의 가중치를 주어 저장
+for i in range(len(prediction)):
+    diff = temp_df.iloc[i]-prediction.iloc[i]
+    if i < PERIOD: # 12개월 전 데이터가 없을 땐 0.6 곱함
+        dt.append(GAMMA*abs(diff))
+    else:
+        dt.append(GAMMA*abs(diff) + (1-GAMMA)*dt[i-PERIOD]) # 12개월 이전 차이에 0.4 곱함
 
-# ▶ 이상 데이터 확인
-co2[res.resid[(res.resid>mu+3*std)|(res.resid<mu-3*std)].index]
+# 저장된 실측/결측 차이를 예측치의 95% 신뢰구간(1.96)으로 반영하여 Upper/Lower Band 계산
+    difference_array.append(diff)
+    UB.append(prediction[i]+SF*dt[i])
+    LB.append(prediction[i]-SF*dt[i])
+    
+"""Classification of data points as either normal or anomaly"""
+normal = []
+normal_date = []
+anomaly = []
+anomaly_date = []
+
+# 신뢰구간을 벗어나는지 판단하여 normal, anomaly 결정
+for i in range(len(temp_df.index)):
+    if ((UB[i] <= temp_df.iloc[i]).bool() or (LB[i] >= temp_df.iloc[i]).bool()) and i > PERIOD:
+        anomaly_date.append(temp_df.index[i])
+        anomaly.append(temp_df.iloc[i][0])
+    else:
+        normal_date.append(temp_df.index[i])
+        normal.append(temp_df.iloc[i][0])
+        
+anomaly = pd.DataFrame({"date": anomaly_date, "value": anomaly})
+anomaly.set_index('date', inplace=True)
+normal = pd.DataFrame({"date": normal_date, "value": normal})
+normal.set_index('date', inplace=True)
+
+# plotting
+plt.figure(figsize=(24,12))
+plt.plot(normal.index, normal, 'o', color='green', markersize=5)
+plt.plot(anomaly.index, anomaly, 'o', color='red', markersize=5)
+plt.plot(temp_df.index, UB, linestyle='--', color='grey')
+plt.plot(temp_df.index, LB, linestyle='--', color='grey')
+plt.legend(['Normal', 'Anomaly', 'Upper Bound', 'Lower Bound'])
+plt.show()
 ```
