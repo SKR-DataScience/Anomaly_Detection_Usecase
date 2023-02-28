@@ -99,7 +99,7 @@
 			<td>김유리</td>
 		<tr>
 			<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/5_시퀀스기반/note2_STL.md">2. 시계열 분해 이상탐지
-			(1) -STL  </a></br> 
+			(1) - STL  </a></br> 
 			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/5_시퀀스기반/note2_STL.md">3. 시계열 분해 이상탐지
 			(2) - Holt-Winters
 			</td>
