@@ -80,7 +80,7 @@
 			<td> 김유리 </td> 
 		</tr>
 		<tr>
-		<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/3_분류모델_기반/note2_AutoEncoder.md">2. Isolation Forest </a> </td>
+		<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/3_분류모델_기반/note2_AutoEncoder.md">4. AutoEncoder </a> </td>
 		<td> 김재원 </td> 
 		</tr>
 		<tr>
