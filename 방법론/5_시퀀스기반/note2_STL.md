@@ -52,7 +52,7 @@
 </br>
 
 > ## 사용방법
-- Statsmodels 패키지에 내장
+- statsmodels 라이브러리에 내장
   - from statsmodels.tsa.seasonal import STL
 - 주요 파라미터로 주기(Seasonal) 설정
 - Seasonal 및 Trend 제거 후 남은 Residual에 대해서, 정규성 검증 및 3-sigma rule 적용해 이상 탐지
