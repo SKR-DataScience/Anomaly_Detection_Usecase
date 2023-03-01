@@ -80,11 +80,11 @@
 			<td> 김유리 </td> 
 		</tr>
 		<tr>
-		<td> 4. 오토인코더 </a> </td>
+		<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/3_분류모델_기반/note2_AutoEncoder.md">4. AutoEncoder </a> </td>
 		<td> 김재원 </td> 
 		</tr>
 		<tr>
-		<td> 5. Robust Random Cut Forest</a> </td>
+		<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/2_분포_패턴기반/note5_RRCF.md">5. Robust Random Cut Forest</a> </td>
 		<td> 최동민 </td> 
 		</tr>
 		<tr>
@@ -98,9 +98,10 @@
 			</td>
 			<td>김유리</td>
 		<tr>
-			<td> 2. 시계열 분해 이상탐지  </br> 
-			&nbsp;&nbsp;&nbsp;&nbsp; - STL </br> 
-			&nbsp;&nbsp;&nbsp;&nbsp; - Holt-Winters
+			<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/5_시퀀스기반/note2_STL.md">2. 시계열 분해 이상탐지
+			(1) - STL  </a></br> 
+			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/방법론/5_시퀀스기반/note3_Holt-winters.md">3. 시계열 분해 이상탐지
+			(2) - Holt-Winters
 			</td>
 			<td>최동민</td>
 		</tr>
