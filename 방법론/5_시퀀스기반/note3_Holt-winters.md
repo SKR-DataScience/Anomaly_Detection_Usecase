@@ -6,9 +6,10 @@
 > ## 정의
 - Exponential smoothing(지수평활) 기법을 기반으로 Trend와 Seasonality 속성을 추가해 시계열 데이터를 예측하고,    
   신뢰구간을 설정하여 이상 탐지하는 기법
-- Exponentail smoothing
-  * 시간적으로 가까운 데이터는 가중치를 높게, 오래된 데이터는 가중치를 낮게 설정하여 미래의 값을 예측하는 방법
-- 단순한 지수평활 기법에 trend와 seasonality 속성을 추가함
+- Exponential smoothing
+  * moving average 계산시 시간적으로 가까운 데이터는 가중치를 높게, 오래된 데이터는 가중치를 낮게 설정하여 계산하는 방법 
+- Holt-winters 모델에서는 기본적인 Exponential smoothing 기법에 trend와 seasonality 속성을 추가함
+  * 참고자료 : https://aiemag.tistory.com/260 
 - Holt-winters 모델을 통해 시계열 데이터를 예측하고, brutlag 알고리즘을 활용해 신뢰구간을 설정 -> 이를 넘으면 이상치로 간주
 - 단순한 구조이지만 여러 과제에서 baseline model로서 널리 활용되고 있음
 
