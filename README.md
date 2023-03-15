@@ -110,24 +110,105 @@
 
 ## 2. 분야 별 이상탐지
 1. 커머스 및 유저 행동
-	- 이상매출
-	- 이상 유저
-	- 이상 쿠폰 사용
-	- 온라인 구매 유저 이탈
-	- 통신사 유저 이탈
-	- 온라인 광고 이상클릭
-	- 텍스트 기반 사기(이메일, 통화)
+	<table>
+		<thead>
+			<tr>
+				<th>강의/실습</th>
+				<th>작성자</th>
+				<th>비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td><a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/1_커머스_유저행동/note01_이상매출.ipynb"> 1. 이상매출 </a>
+			</td>
+			<td> 김유리 </td>
+			<td> # 지점별매출 # stream data <br/>
+			<a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/1_커머스_유저행동/rrcf.py"> rrcf.py </a>: 구 버전 numpy 오류 수정 </td>
+			</tr>
+			<tr>
+			<td><a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/1_커머스_유저행동/note02_이상유저탐지.ipynb"> 2. 이상유저탐지 </a>
+			</td>
+			<td> 최동민 </td>
+			<td> # 거래/결제 비정상 거래  </td>
+			</tr>
+			<tr>
+			<td><a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/1_커머스_유저행동/note03_이상쿠폰.md"> 3. 이상쿠폰 </a>
+			</td>
+			<td> 김재원 </td>
+			<td> # 마케팅 캠페인 # 쿠폰 발행 # Rule-base  </td>
+			</tr>
+			<tr>
+			<td><a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/1_커머스_유저행동/note04_통신사유저이탈.md"> 4. 통신사유저이탈 </a>
+			</td>
+			<td> 김유리 </td>
+			<td> # Demographic # 가입정보 # pycarot </td>
+			</tr>
+			</tr>
+			<tr>
+			<td> 5. 온라인 구매 유저 이탈 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			</tr>
+			<tr>
+			<td> 6. 온라인 광고 이상클릭 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			<tr>
+			<td> 7. 텍스트 기반 사기(이메일, 통화) </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+		</tbody>
+	</table>
+
 3. 게임
 	- 서바이벌 FPS 게임 버그 유저
 	- 밸런스 이상 캐릭터
 	- 이상 로그인 시도
+
 4. 금융
-	- 신용카드 사기거래
-	- 온라인 결제 사기거래
-	- 시계열 보험 청구 사기
-	- unlabel 보험 청구 사기
-	- 요금 청구서 사기
-	- 신용불량고객 이상
+	<table>
+		<thead>
+			<tr>
+				<th>강의/실습</th>
+				<th>작성자</th>
+				<th>비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/4_금융/note01_신용불량고객탐지.md">1. 신용불량 고객 탐지 </a> </td>
+			<td> 김유리 </td>
+			<td> # 신용평가 # 대출 마케팅 대상 </td>
+			</tr>
+			<tr>
+			<td> 2. 신용카드 사기 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			<tr>
+			<td> 3. 온라인 결제 사기 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			<td> 4. 시계열 보험 청구 사기</td>
+			<td>  </td>
+			<td>  </td>
+			<tr>
+			<td> 5. unlabel 보험 청구 사기</td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			<td> 6. 요금 청구서 사기</td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+		</tbody>
+	</table>
+
 5. 기계, 제조
 	- Water Circulation
 	- Bearing failure
@@ -138,9 +219,33 @@
 	- 만성 신장 질환 이상 환자
 	- unlabel 헬스케어 데이터 이상
 7. 공공
-	 - 공유자전거 이상 사용
-	 -  전력사용
-	 - 전력 소비량 이상 탐지
+	<table>
+		<thead>
+			<tr>
+				<th>강의/실습</th>
+				<th>작성자</th>
+				<th>비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/7_공공데이터/note01_전력사용.ipynb">1. 전력소비량 이상 </a></td>
+			<td> 최동민 </td>
+			<td> # 시간대별 # 이상구간 상한, 하한 # 혼합분포 이상탐지 </td>
+			</tr>
+			<tr>
+			<td> 2. 공유자전거 이상 사용 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			<tr>
+			<td> 3. 전력사용 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+		</tbody>
+	</table>
+
 8. 기타
 	- 서버 셧다운
 	- 사이트 트래픽 이상
