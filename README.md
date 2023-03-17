@@ -130,7 +130,7 @@
 			<td><a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/1_커머스_유저행동/note02_이상유저탐지.ipynb"> 2. 이상유저탐지 </a>
 			</td>
 			<td> 최동민 </td>
-			<td> # 거래/결제 비정상 거래  </td>
+			<td> # 비정상 거래 # Pycaret # Precision/Recall </td>
 			</tr>
 			<tr>
 			<td><a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/1_커머스_유저행동/note03_이상쿠폰.md"> 3. 이상쿠폰 </a>
@@ -247,10 +247,38 @@
 	</table>
 
 8. 기타
-	- 서버 셧다운
-	- 사이트 트래픽 이상
-	- 기후 이상
-	- 태양 흑점 활동 이상
+	<table>
+		<thead>
+			<tr>
+				<th>강의/실습</th>
+				<th>작성자</th>
+				<th>비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td> 1. 서버 셧다운 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			<tr>
+			<td> 2. 사이트 트래픽 이상 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			<tr>
+			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/8_기타/note01_기후데이터.ipynb">3. 기후 데이터 이상 </a> </td>
+			<td> 최동민 </td>
+			<td> # 시계열분해 # STL # S-H-ESD </td>
+			</tr>
+			<tr>
+			<td> 4. 태양 흑점 활동 이상 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+		</tbody>
+	</table>
+
 
 
 
