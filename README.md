@@ -165,10 +165,32 @@
 	</table>
 
 3. 게임
-	- 서바이벌 FPS 게임 버그 유저
-	- 밸런스 이상 캐릭터
-	- 이상 로그인 시도
-
+	<table>
+		<thead>
+			<tr>
+				<th>강의/실습</th>
+				<th>작성자</th>
+				<th>비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/2_게임/note01_FPS버그유저탐색.md">1. 서바이벌 FPS 게임 버그 유저 </a></td>
+			<td> 최동민 </td>
+			<td> # EDA 규칙기반 # FPS게임 </td>
+			</tr>
+			<tr>
+			<td> 2. 밸런스 이상 캐릭터 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			<tr>
+			<td> 3. 이상 로그인 시도 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+		</tbody>
+	</table>
 4. 금융
 	<table>
 		<thead>
