@@ -279,50 +279,29 @@
 		</thead>
 		<tbody>
 			<tr>
-<<<<<<< HEAD
 			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/7_기타/note01_서버셧다운.ipynb">1. 서버셧다운 </a></td>
 			<td> 김유리 </td>
 			<td> # 단변량 시계열 # 온도 이상 </td>
 			</tr>
 			<tr>
 			<td> 2. 사이트 트래픽 이상 </td>
-=======
 			<td> 1. 서버 셧다운 </td>
->>>>>>> 5b880ed0297772d55f8e626a8d65ae701553cb58
 			<td>  </td>
 			<td>  </td>
-			</tr>
 			<tr>
-<<<<<<< HEAD
-			<td> 3. 전력사용 </td>
-			<td>  </td>
-			<td>  </td>
-			</tr>
-			</tr>
-			<tr>
-			<td> 4. 태양흑점활동 </td>
-=======
-			<td> 2. 사이트 트래픽 이상 </td>
-			<td>  </td>
-			<td>  </td>
-			</tr>
-			<tr>
-			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/8_기타/note01_기후데이터.ipynb">3. 기후 데이터 이상 </a> </td>
+			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/7_기타/note01_기후데이터.ipynb">3. 기후 데이터 이상 </a> </td>
 			<td> 최동민 </td>
 			<td> # 시계열분해 # STL # S-H-ESD </td>
 			</tr>
-			<tr>
-			<td> 4. 태양 흑점 활동 이상 </td>
->>>>>>> 5b880ed0297772d55f8e626a8d65ae701553cb58
-			<td>  </td>
-			<td>  </td>
 			</tr>
+			<tr>
+			<td> 4. 태양흑점활동 이상</td>
+			<td>  </td>
+			<td>  </td>
+			<td>  </td>
 		</tbody>
 	</table>
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 5b880ed0297772d55f8e626a8d65ae701553cb58
 
 
