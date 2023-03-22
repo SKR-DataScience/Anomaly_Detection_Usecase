@@ -130,7 +130,7 @@
 			<td><a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/1_커머스_유저행동/note02_이상유저탐지.ipynb"> 2. 이상유저탐지 </a>
 			</td>
 			<td> 최동민 </td>
-			<td> # 거래/결제 비정상 거래  </td>
+			<td> # 비정상 거래 # Pycaret # Precision/Recall </td>
 			</tr>
 			<tr>
 			<td><a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/1_커머스_유저행동/note03_이상쿠폰.md"> 3. 이상쿠폰 </a>
@@ -165,10 +165,32 @@
 	</table>
 
 3. 게임
-	- 서바이벌 FPS 게임 버그 유저
-	- 밸런스 이상 캐릭터
-	- 이상 로그인 시도
-
+	<table>
+		<thead>
+			<tr>
+				<th>강의/실습</th>
+				<th>작성자</th>
+				<th>비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/2_게임/note01_FPS버그유저탐색.md">1. 서바이벌 FPS 게임 버그 유저 </a></td>
+			<td> 최동민 </td>
+			<td> # EDA 규칙기반 # FPS게임 </td>
+			</tr>
+			<tr>
+			<td> 2. 밸런스 이상 캐릭터 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			<tr>
+			<td> 3. 이상 로그인 시도 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+		</tbody>
+	</table>
 4. 금융
 	<table>
 		<thead>
@@ -257,16 +279,21 @@
 		</thead>
 		<tbody>
 			<tr>
+<<<<<<< HEAD
 			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/7_기타/note01_서버셧다운.ipynb">1. 서버셧다운 </a></td>
 			<td> 김유리 </td>
 			<td> # 단변량 시계열 # 온도 이상 </td>
 			</tr>
 			<tr>
 			<td> 2. 사이트 트래픽 이상 </td>
+=======
+			<td> 1. 서버 셧다운 </td>
+>>>>>>> 5b880ed0297772d55f8e626a8d65ae701553cb58
 			<td>  </td>
 			<td>  </td>
 			</tr>
 			<tr>
+<<<<<<< HEAD
 			<td> 3. 전력사용 </td>
 			<td>  </td>
 			<td>  </td>
@@ -274,10 +301,28 @@
 			</tr>
 			<tr>
 			<td> 4. 태양흑점활동 </td>
+=======
+			<td> 2. 사이트 트래픽 이상 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			<tr>
+			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/8_기타/note01_기후데이터.ipynb">3. 기후 데이터 이상 </a> </td>
+			<td> 최동민 </td>
+			<td> # 시계열분해 # STL # S-H-ESD </td>
+			</tr>
+			<tr>
+			<td> 4. 태양 흑점 활동 이상 </td>
+>>>>>>> 5b880ed0297772d55f8e626a8d65ae701553cb58
 			<td>  </td>
 			<td>  </td>
 			</tr>
 		</tbody>
 	</table>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 5b880ed0297772d55f8e626a8d65ae701553cb58
 
 
