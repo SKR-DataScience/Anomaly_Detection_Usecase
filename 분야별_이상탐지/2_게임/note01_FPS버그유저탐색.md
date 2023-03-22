@@ -63,7 +63,7 @@
 - 또 실제로 사용되는 변수들
   - Cursor Acceleration when aquiring Aim (AccA)  
     : 새로운 적이 포착되었을 때 에임 커서의 가속도. 에임봇은 어떤 방향이든 적을 곧바로 맞출 수 있기 때문에 가속도가 매우 빠름. 
-  - Time on Target (ToT)
+  - Time on Target (ToT)  
     : 플레이어의 에임이 적 위에 얼마나 오래 있었는지 측정. 에임봇은 무조건 타겟에 에임이 가도록 lock되어있을 가능성이 높기 대문에 이 시간이 길 수 있음.
     
 (출처: https://bluehyena.tistory.com/entry/%EC%A0%80%EB%84%90%EB%A6%AC%EB%B7%B0-A-statistical-aimbot-detection-method-for-online-FPS-games)
