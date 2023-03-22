@@ -218,7 +218,7 @@
 	- 심장 질병 이상 환자
 	- 만성 신장 질환 이상 환자
 	- unlabel 헬스케어 데이터 이상
-7. 공공
+7. 공공 데이터
 	<table>
 		<thead>
 			<tr>
@@ -229,7 +229,7 @@
 		</thead>
 		<tbody>
 			<tr>
-			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/7_공공데이터/note01_전력사용.ipynb">1. 전력소비량 이상 </a></td>
+			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/6_공공데이터/note01_전력사용.ipynb">1. 전력소비량 이상 </a></td>
 			<td> 최동민 </td>
 			<td> # 시간대별 # 이상구간 상한, 하한 # 혼합분포 이상탐지 </td>
 			</tr>
@@ -247,10 +247,37 @@
 	</table>
 
 8. 기타
-	- 서버 셧다운
-	- 사이트 트래픽 이상
-	- 기후 이상
-	- 태양 흑점 활동 이상
-
+	<table>
+		<thead>
+			<tr>
+				<th>강의/실습</th>
+				<th>작성자</th>
+				<th>비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/7_기타/note01_서버셧다운.ipynb">1. 서버셧다운 </a></td>
+			<td> 김유리 </td>
+			<td> # 단변량 시계열 # 온도 이상 </td>
+			</tr>
+			<tr>
+			<td> 2. 사이트 트래픽 이상 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			<tr>
+			<td> 3. 전력사용 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			</tr>
+			<tr>
+			<td> 4. 태양흑점활동 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+		</tbody>
+	</table>
 
 
