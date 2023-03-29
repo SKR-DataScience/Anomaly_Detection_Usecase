@@ -157,9 +157,9 @@
 			<td>  </td>
 			</tr>
 			<tr>
-			<td> 7. 텍스트 기반 사기(이메일, 통화) </td>
-			<td>  </td>
-			<td>  </td>
+			<td> <a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/1_커머스_유저행동/note07_텍스트기반사기.ipynb"> 7. 텍스트 기반 사기(이메일, 통화) </a></td>
+			<td> 김유리 </td>
+			<td> # 자연어(영어) # nltk </td>
 			</tr>
 		</tbody>
 	</table>
