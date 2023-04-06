@@ -38,7 +38,10 @@
 > ## 이상 탐지 접근 방법
 - Isolation Forest 사용
   - 주어진 문제가 contextual detection 보다는 point detection에 가깝다고 판단 --> 해당 유형에 적합한 모델 사용
-  - 성능 평가는 recall 위주로 함. 이상 탐지에서는 '실제 이상 중 몇 개나 맞췄는지'가 중요하기 때문.
+    - 근데 이 문제가 point detection이 맞나? contextual detection에 가까운 것 같음  
+    - 관련자료: https://velog.io/@kangtae/%EC%95%84%EC%9D%B4%ED%9A%A8-Anomaly-detection  
+
+- 성능 평가는 recall 위주로 함. 이상 탐지에서는 '실제 이상 중 몇 개나 맞췄는지'가 중요하기 때문.
 
 - Isolation Forsest에서 score 기반 threshold 조정하기
   - decision_function() 사용해 outlier score 산출 --> 원래는 음수일 경우 outlier로 분류
