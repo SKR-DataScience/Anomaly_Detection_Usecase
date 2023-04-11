@@ -232,10 +232,37 @@
 	</table>
 
 5. 기계, 제조
-	- Water Circulation
-	- Bearing failure
-	- 반도체 공정
-	- 장비 충돌 이상
+	<table>
+		<thead>
+			<tr>
+				<th>강의/실습</th>
+				<th>작성자</th>
+				<th>비고</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/3_기계,제조/note01_Water Circulation System 설비 예지 보전.md">1. Water Circulation 설비 예지 보전 </a></td>
+			<td> 최동민 </td>
+			<td> # 시계열 센서데이터 # Isolation Forest # 임계치 조정 </td>
+			</tr>
+			<tr>
+			<td> 2. Bearing failure </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			<tr>
+			<td> 3. 반도체 공정 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+			<tr>
+			<td> 4. 장비 충돌 이상 </td>
+			<td>  </td>
+			<td>  </td>
+			</tr>
+		</tbody>
+	</table>
 6. 의료
 	- 심장 질병 이상 환자
 	- 만성 신장 질환 이상 환자
@@ -261,9 +288,9 @@
 			<td>  </td>
 			</tr>
 			<tr>
-			<td> 3. 전력사용 </td>
-			<td>  </td>
-			<td>  </td>
+			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/6_공공데이터/note02_전력소비량.md">3. 전력사용 </td>
+			<td> 최동민 </td>
+			<td> # 사전 탐지 # Isolation Forest # RRCF </td>
 			</tr>
 		</tbody>
 	</table>
