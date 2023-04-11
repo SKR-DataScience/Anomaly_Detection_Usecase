@@ -202,7 +202,7 @@
 		</thead>
 		<tbody>
 			<tr>
-			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/4_금융/note01_신용불량고객탐지.md">1. 신용불량 고객 탐지 </a> </td>
+			<td> <a hre = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/4_금융/note01_신용불량고객탐지.md">1. 신용불량 고객 탐지 </a> </td>
 			<td> 김유리 </td>
 			<td> # 신용평가 # 대출 마케팅 대상 </td>
 			</tr>
@@ -216,9 +216,9 @@
 			<td>  </td>
 			<td>  </td>
 			</tr>
-			<td> 4. 시계열 보험 청구 사기</td>
-			<td>  </td>
-			<td>  </td>
+			<td> <a hre = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/4_금융/note01_신용불량고객탐지.md">4. 시계열 보험 청구 사기 </a></td>
+			<td> 김유리 </td>
+			<td> # 사고 발생 주기 # 고객 별 사기 탐지 </td>
 			<tr>
 			<td> 5. unlabel 보험 청구 사기</td>
 			<td>  </td>
