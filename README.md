@@ -180,9 +180,9 @@
 			<td> # EDA 규칙기반 # FPS게임 </td>
 			</tr>
 			<tr>
-			<td> 2. 밸런스 이상 캐릭터 </td>
-			<td>  </td>
-			<td>  </td>
+			<td> <a href = "https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/2_게임/note02_밸런스이상캐릭터탐지.md">2. 밸런스 이상 캐릭터 </td>
+			<td> 최동민 </td>
+			<td> # AOS게임 # Radar chart </td>
 			</tr>
 			<tr>
 			<td> 3. 이상 로그인 시도 </td>
