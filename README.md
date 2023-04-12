@@ -146,9 +146,9 @@
 			</tr>
 			</tr>
 			<tr>
-			<td> 5. 온라인 구매 유저 이탈 </td>
-			<td>  </td>
-			<td>  </td>
+			<td><a href="https://github.com/SKR-DataScience/Anomaly_Detection_Usecase/blob/main/분야별_이상탐지/1_커머스_유저행동/note05_온라인구매유저이탈.md"> 5. 온라인 구매 유저 이탈 </td>
+			<td> 최동민 </td>
+			<td> # 이탈 예측 # 이탈 유저 정의 # 이용경과기간 # 이용주기 </td>
 			</tr>
 			</tr>
 			<tr>
